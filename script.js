@@ -8,8 +8,19 @@ btn.forEach((button)=>{
         const inputValue = input.value;
         console.log(inputValue);
         input.value = '';
+        const listItem = document.createElement('li');
+        const somethingSpan = document.createElement('span');
+        const deleteButton = document.createElement('button');
+        somethingSpan.textContent = inputValue;
+        deleteButton.textContent = 'Delete';
+
+        listItem.appendChild(somethingSpan);
+        listItem.appendChild(deleteButton);
+
+        unorderedList.appendChild(listItem);
 
 
     });
 
 });
+
