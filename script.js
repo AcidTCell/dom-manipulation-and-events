@@ -7,6 +7,7 @@ btn.forEach((button)=>{
         const input = document.getElementById('item');
         const inputValue = input.value;
         console.log(inputValue);
+        input.value = '';
 
 
     });
