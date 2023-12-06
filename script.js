@@ -19,8 +19,13 @@ btn.forEach((button)=>{
 
         unorderedList.appendChild(listItem);
 
+        deleteButton.addEventListener('click', ()=>{
+            listItem.remove();
+        })
+
 
     });
 
 });
 
+document.getElementById('item').focus();
